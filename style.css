@@ -1,0 +1,144 @@
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-shadow: 2px 2px black;
+  padding: 5px 0;
+  text-align: center;
+}
+
+body {
+  font: 14pt 'Crimson Text';
+  margin: 0;
+  }
+
+html {
+  background-color: #fff;
+  }
+
+main {
+  padding: 0px;
+  width: 75vw;
+  max-width: 600px;
+  margin: auto;
+  }
+  
+h1 {
+  color: dodgerblue;
+  text-align: center;
+
+  }
+
+.header{
+  height: 100px;
+  margin: 20px;
+}
+
+.flex-container{
+  background-color: white;
+  flex-grow: 1;
+  left: -50px;
+  height: 200px;
+  width: 700px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  animation-name: animation;
+  animation-duration: 5s;
+}
+
+.flex-item {
+background-color: black;
+color: white;
+width: 200px;
+}
+
+/*0%-100% betyder bara hur långt in i animationen det går. 0=början 100=slutet. Viktigt att det ska vara procent(%)*/
+
+@keyframes animation {
+  0%   { left:-800px; top:0px;}
+  100% { left:-50px; top:0px;}
+}
+.item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.container {
+  display: flex;
+  height: 50px;
+  align-items: stretch;
+  justify-content: space-evenly;
+  background-color: #262626;
+}
+
+.a:link, .a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.a:hover, .a:active {
+  background-color: #313131;
+  text-decoration: underline;
+}
+
+.varukorg {
+  flex-grow: 1;
+  display: flex;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  height: auto;
+  margin-right:50px ;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50px;
+  justify-content: center;
+}
+
+.varukorg:hover, .varukorg:active {
+  background-color: #313131;
+  text-decoration: underline;
+}
+
+picture{
+  flex-grow: 1;
+  display: flex;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  height: auto;
+  margin-right:50px ;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50px;
+  justify-content: center;
+}
+
+.container img {
+  display: block;
+}
+
+.portrait img {
+  width: 100%;
+}
+.landscape img {
+  height: 100%;
+}
+
+/*
+.background{
+  background-attachment: fixed;
+  background-image: url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Hades_image1600w.png');
+}
+<a href="https://hades.gamepedia.com/Characters"><img src="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Hades_image1600w.png" alt="hades.pic"></a>
